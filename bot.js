@@ -18,7 +18,6 @@ bot.command('status', async (ctx) => {
     formatString += `\nworkerID: ${worker.id}\nworkerName: ${worker.name}\nuptime: ${new Date(worker.uptime * 1000).toISOString().substr(11, 8)}\nhashrate: ${worker.hashrate / 1000000} MH/S\n`
   });
   ctx.reply(formatString);
-
 })
 // bot.command('worker', async (ctx) => {
 //   const id = ctx.message.text.replace('/worker', '').trim();
